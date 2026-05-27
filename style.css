@@ -1,0 +1,218 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  background: #222;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #444;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+nav a:hover {
+  background: #666;
+}
+
+/* Galería */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.piece {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+.piece img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  transition: 0.3s;
+}
+.piece img:hover {
+  border-color: green;
+}
+.piece h2 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+}
+.piece p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Formularios */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background: #222;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: #444;
+}
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+}
+footer a {
+  color: #0f0;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* --- Estilos del Modal --- */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: auto;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow: hidden;
+  text-align: center;   /* centra el contenido horizontalmente */
+}
+
+.modal-content {
+  margin-top: 60px;     /* espacio desde la parte superior */
+  max-width: 80%;
+  max-height: 70vh;
+  border: 4px solid #fff;
+  object-fit: contain;
+  display: inline-block; /* permite que se centre con text-align */
+}
+
+.caption {
+  margin: 10px auto;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  max-width: 80%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 40px;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.prev {
+  left: 20px;
+}
+
+.next {
+  right: 20px;
+}
+
+.prev:hover, .next:hover {
+  color: green;
+}
+
+.about-photo {
+  display: block;          /* convierte la imagen en bloque */
+  margin: 20px auto;       /* centrada horizontalmente */
+  max-width: 500px;        /* controla el tamaño máximo */
+  height: auto;            /* mantiene proporción */
+  border-radius: 8px;      /* esquinas redondeadas */
+}
+
+.about-text {
+  max-width: 800px;       /* ancho controlado para lectura cómoda */
+  margin: 40px auto;      /* centrado con espacio arriba y abajo */
+  padding: 20px;
+  background-color: #fff; /* fondo blanco limpio */
+  color: #003366;         /* tipografía azul clara */
+  font-size: 18px;
+  line-height: 1.6;
+  border-radius: 8px;
+}
+
+.about-text h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #002244;
+}
+
+.about-text blockquote {
+  font-style: italic;
+  color: #006699;
+  margin: 20px auto;
+  padding-left: 20px;
+  border-left: 4px solid #006699;
+}
